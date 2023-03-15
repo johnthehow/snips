@@ -1,3 +1,11 @@
+''' 
+[模块注释] 20230315113144
+	[发展计划]
+		1. 将该模块中的函数继承到python内建dict类中
+		2. 
+'''
+
+
 '''
 [函数注释] 20230315001106
 	[功能]
@@ -13,12 +21,12 @@
 			7. 样例: dict1 = {'for':{'PREP':[1,2,3]}}
 	[输出]
 		1. 默认
-			1. 语义: 嵌套字典的层数
+			1. 语义: 嵌套字典的层数(即有多少层key)
 			2. 数据结构:
 			3. 样例
-			>>>	dict1 = {'for':{'PREP':[1,2,3]}}
-			>>>	dict_depth(dict1)
-			>>> 2
+				>>>	dict1 = {'for':{'PREP':[1,2,3]}}
+				>>>	dict_depth(dict1)
+				>>> 2
 	[用例]
 		1. 用例1
 			1. 语义:
@@ -65,7 +73,7 @@ def dict_depth(dic): # 20230315001106
 			3. 样例文件/输出:
 	[已知问题]
 		1. [问题1]
-			1. 问题描述
+			1. 问题描述:
 			2. 问题复现
 				1. 复现环境
 				2. 复现语句
@@ -79,9 +87,15 @@ def dict_depth(dic): # 20230315001106
 '''
 def nested_dict(lists,idx): # 20230315092535
 	if idx>0:
-		lists = list(reversed(lists)) # 让最外层的keys和列表最左端的列表对应
 		listpop = lists[idx]
 		return {i:nested_dict(lists,idx-1) for i in listpop}
-	else:
+	elif idx==0:
 		listpop = lists[idx]
 		return {i:[] for i in listpop}
+
+lsts = [[1,2,3,4],['a','b','c','d'],['甲','乙','丙','丁'],['α','β','γ','δ']]
+
+print(nested_dict(lsts, 3))
+print(dict_depth(nested_dict(lsts, 3)))
+
+
