@@ -433,6 +433,9 @@ dicts = [dic1,dic2]
 
 lst = [['α', 'β', 'γ', 'δ'], ['甲', '乙', '丙', '丁'], ['甲', '乙', '丙', '丁'], ['a', 'b', 'c', 'd'], ['a', 'b', 'c', 'd'], [1, 2, 3, 4], [1, 2, 3, 4]]
 
-res = merge_dicts(dicts)
+# res = merge_dicts(dicts)
+from collections import ChainMap
+
+res = ChainMap(dic2,dic1)
 print(res)
 
