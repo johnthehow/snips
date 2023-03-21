@@ -13,4 +13,4 @@ def module_ref():
 	root = max(candicate_roots, key=len)
 	remain = res.replace(root,'').replace('\\','/')
 	remain_parts = PurePath(remain).parts
-print('.'.join(remain_parts[1:])[:-3])
+	print('.'.join(remain_parts[1:])[:-3])
