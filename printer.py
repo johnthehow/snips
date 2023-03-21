@@ -4,7 +4,6 @@ import sys
 
 def module_ref():
 	res = inspect.stack()[0][1].lower()
-	res_parts = PurePath(inspect.stack()[0][1]).parts[5:]
 	syspaths = [i.lower() for i in sys.path[1:]]
 	candicate_roots = []
 	for i in syspaths:
