@@ -9,7 +9,8 @@ for i in syspaths:
 	if i in res:
 		candicate_roots.append(i)
 root = max(candicate_roots, key=len)
-
+remain = res.replace(root,'')
 print(candicate_roots)
 print(syspaths)
 print(root)
+print(remain)
