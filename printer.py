@@ -14,6 +14,7 @@ def module_ref():
 	remain = res.replace(root,'').replace('\\','/')
 	remain_parts = PurePath(remain).parts
 	print('.'.join(remain_parts[1:])[:-3])
+	return remain_parts[1:])[:-3]
 
 
 module_ref()
