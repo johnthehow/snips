@@ -222,8 +222,10 @@ def dict_seqidx_getter(dic,seq_idx): # 20230312003819
 		2. 
 '''
 def dict_seqidx_setter(dic,seq_idx,val): # 20230316182821
+	print(f'------------------------------------')
 	print(f'[{inspect.stack()[0][3]}] {dic.keys()}')
 	print(f'[{inspect.stack()[0][3]}] {seq_idx}')
+	print(f'------------------------------------')
 	len_tup_idx = len(seq_idx)
 	idx_popout = seq_idx[0] # 取下标第一个值
 	if len_tup_idx>1:
