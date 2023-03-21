@@ -1,5 +1,6 @@
 import inspect
 from pathlib import PurePath
+from pathlib import Path
 import sys
 res = inspect.stack()[0][1].lower()
 res_parts = PurePath(inspect.stack()[0][1]).parts[5:]
