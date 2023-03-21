@@ -1,6 +1,4 @@
 import inspect
-from pathlib import Path
-res1 = Path(inspect.stack()[0][1])
-res2 = inspect.stack()[0][3]
-print(res1)
-print(res2)
+from pathlib import PurePath
+res = PurePath(inspect.stack()[0][1]).parts
+print(res)
