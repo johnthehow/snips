@@ -11,8 +11,10 @@ for i in syspaths:
 root = max(candicate_roots, key=len)
 remain = res.replace(root,'').replace('\\','/')
 remain_parts = PurePath(remain).parts
+remain_combine = ['.'.join(i) for i in remain_parts[1:]]
 print(candicate_roots)
 print(syspaths)
 print(root)
 print(remain)
 print(remain_parts)
+print(remain_combine)
