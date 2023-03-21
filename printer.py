@@ -3,7 +3,7 @@ from pathlib import PurePath
 import sys
 
 def module_ref():
-	res = inspect.stack()[0][1].lower()
+	res = inspect.stack()[1].function.lower()
 	# print(res)
 	syspaths = [i.lower() for i in sys.path[1:]]
 	# print(syspaths)
@@ -18,4 +18,4 @@ def module_ref():
 	return '.'.join(remain_parts[1:])[:-3]
 
 
-print(module_ref())
+# print(module_ref())
