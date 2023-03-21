@@ -16,12 +16,6 @@ from time import time
                        return
 
                 >>> func(args)
-
-            2. 输出
-                1. 语义: 
-                2. 数据类型: 
-                3. 数据结构: 
-                4. 样例文件/输出: 
 '''
 def deco_timer(func):
     def func_wrapper(*args,**kwargs):
