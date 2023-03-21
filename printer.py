@@ -1,6 +1,5 @@
 import inspect
 from pathlib import PurePath
-from pathlib import Path
 import sys
 res = inspect.stack()[0][1].lower()
 res_parts = PurePath(inspect.stack()[0][1]).parts[5:]
@@ -11,7 +10,7 @@ for i in syspaths:
 		candicate_roots.append(i)
 root = max(candicate_roots, key=len)
 remain = res.replace(root,'')
-remain_parts = Path(remain)
+remain_parts = PurePath(remain)
 print(candicate_roots)
 print(syspaths)
 print(root)
