@@ -7,6 +7,6 @@ syspaths = sys.path
 candicate_roots = []
 for i in syspaths:
 	if i in res:
-		cadicate_roots.append(i)
+		cadidate_roots.append(i)
 
 print(candicate_roots)
