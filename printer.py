@@ -3,7 +3,7 @@ from pathlib import PurePath
 import sys
 res = inspect.stack()[0][1].lower()
 res_parts = PurePath(inspect.stack()[0][1]).parts[5:]
-syspaths = sys.path[1:]
+syspaths = [i.lower() for i in sys.path[1:]]
 candicate_roots = []
 for i in syspaths:
 	if i in res:
