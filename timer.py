@@ -7,7 +7,16 @@ from time import time
         2. 额外功能
     [用例]
         1. [用例1]
-            1. 语句: 
+            1. 语句
+                >>> from thehow.snips.timer import deco_timer
+
+                >>> @deco_timer
+                    def func(args):
+                       代码段
+                       return
+
+                >>> func(args)
+
             2. 输出
                 1. 语义: 
                 2. 数据类型: 
