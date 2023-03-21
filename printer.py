@@ -3,7 +3,7 @@ from pathlib import PurePath
 import sys
 
 def module_ref():
-	res = inspect.stack()[0][1].lower()
+	res = inspect.stack()[1][1].lower()
 	syspaths = [i.lower() for i in sys.path[1:]]
 	candicate_roots = []
 	for i in syspaths:
@@ -12,8 +12,8 @@ def module_ref():
 	root = max(candicate_roots, key=len)
 	remain = res.replace(root,'').replace('\\','/')
 	remain_parts = PurePath(remain).parts
-	print('.'.join(remain_parts[1:])[:-3])
+	# print('.'.join(remain_parts[1:])[:-3])
 	return '.'.join(remain_parts[1:])[:-3]
 
 
-module_ref()
+print(module_ref())
