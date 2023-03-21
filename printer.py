@@ -6,6 +6,7 @@ def module_ref():
 	res = inspect.stack()[0][3].lower()
 	print(res)
 	syspaths = [i.lower() for i in sys.path[1:]]
+	print(syspaths)
 	candicate_roots = []
 	for i in syspaths:
 		if i in res:
