@@ -13,6 +13,7 @@
 
 '''
 from itertools import product
+import inspect
 
 '''
 [函数注释] 20230315001106
