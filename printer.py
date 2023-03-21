@@ -3,7 +3,7 @@ from pathlib import PurePath
 import sys
 
 def module_ref():
-	res = inspect.stack()[1][3].lower()
+	res = inspect.stack()[0][1].lower()
 	print(res)
 	syspaths = [i.lower() for i in sys.path[1:]]
 	print(syspaths)
