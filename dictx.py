@@ -417,6 +417,8 @@ def vacate_dict(dic): # 20230320013251
 		2. 
 '''
 def merge_dicts(dicts): # 20230321190735
+	if len(dicts) == 0:
+		print(f'[{inspect.stack()[0][3]}] No dict get')
 	keylists = extract_keylists(dicts[0]) # 用于生成空的结果承载嵌套字典的keylist
 	empty_nested_dict = create_nested_dict(keylists, len(keylists)-1) # # 空的结果承载嵌套字典
 	for i in product(*keylists):
