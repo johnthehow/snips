@@ -94,7 +94,7 @@ def dict_depth(dic): # 20230315001106
 	[备注]
 		1. 不采用fromkeys方法是因为该方法生成的字典的value使用相同的内存地址, 一个赋值, 所有内容都一样
 '''
-def create_nested_dict(lists,inner_most, idx): # 20230315092535
+def create_nested_dict(lists,idx): # 20230315092535
 	lists = list(reversed(lists))
 	def rec(lists,idx): # 20230315092535
 		if idx>0:
