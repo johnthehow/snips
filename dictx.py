@@ -287,7 +287,7 @@ def dict_seqidx_setter(dic,seq_idx,val): # 20230316182821
 				2. 复现语句
 				3. 复现存档
 	[开发计划]
-		1. 
+		1. 拟改名为dict_to_keys
 		2.
 	[备注]
 		1.
