@@ -1,6 +1,6 @@
 from pathlib import Path
 
-def resuffix(filename,suffix): # 20230329132438
+def resuffix(filename): # 20230329132438
 	filepath = Path(filename)
 	parent = filepath.parent
 	stem = filepath.stem
