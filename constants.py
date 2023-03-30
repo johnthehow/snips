@@ -2,3 +2,4 @@ word_list = ['in', 'for', 'on', 'at', 'by', 'because', 'a', 'as', 'about', 'an',
 ud_pos = ['NOUN','VERB','ADJ','ADP','DET','PRON','SCONJ','CCONJ','ADV','AUX','PART','PROPN','INTJ','NUM','SYM','PUNCT','X']
 freq_content_word = ['people','so','time','year','years','said','report','new','government']
 
+
