@@ -3,9 +3,6 @@ from itertools import product
 from thehow.snips import constants
 from thehow.snips import dictx
 
-def func(*args):
-	return [i for i in args]
-
 '''
 [函数注释]
 	[功能]
@@ -22,7 +19,7 @@ def func(*args):
 			4. 语义: 放在循环最内层被运行的函数
 			5. 取值范围: 
 			6. 获得来源: 手动输入
-			7. 样例文件/输入: 
+			7. 样例文件/输入: func = lambda *args:[i for i in args]
 		2. [参数2]
 			1. 数据类型: 
 			2. 数据结构: 
