@@ -1,6 +1,5 @@
 from itertools import product
 from thehow.snips.constants import nested_dict_keylist
-from thehow.snips.dictx import create_nested_dict
 from thehow.snips.dictx import dict_seqidx_setter
 
 '''
@@ -44,8 +43,8 @@ from thehow.snips.dictx import dict_seqidx_setter
 				3. 数据结构: {key:{key:val}}
 				4. 样例文件/输出: 20230330152632.txt
 	[依赖]
-		1. 
-		2. 
+		1. thehow.snips.constants.nested_dict_keylist
+		2. thehow.snips.dictx.dict_seqidx_setter
 	[已知问题]
 		1. [问题1标题]
 			1. 问题描述
