@@ -64,7 +64,8 @@ def paraseq(func, fix_para_list, nest_para_lists): # 20230330150547
 	result = create_nested_dict(nest_para_lists, len(nest_para_lists)-1)
 	for seq_idx in product(*nest_para_lists):
 		one_result = func(*fix_para_list,*seq_idx)
-
+		dict_seqidx_setter(result,seq_idx,one_result)
+	return result
 
 if __name__ == '__main__':
 	paraseq(func, 'a', nested_dict_keylist)
