@@ -51,9 +51,9 @@ from thehow.snips.constants import nested_dict_keylist
 		1.
 		2. 
 '''
-def paraseq(func,nest_para_lists): # 20230330150547
+def paraseq(func,fix_para,nest_para_lists): # 20230330150547
 	for seq_idx in product(*nest_para_lists):
-		func(*seq_idx)
+		func(fix_para,*seq_idx)
 
 func = lambda a,b,c,d:print(a,b,c,d)
 
