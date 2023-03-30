@@ -58,4 +58,4 @@ def paraseq(func,fix_para_list,nest_para_lists): # 20230330150547
 func = lambda f,a,b,c,d:print(f,a,b,c,d)
 
 if __name__ == '__main__':
-	paraseq(func, 3, nested_dict_keylist)
+	paraseq(func, 'a', nested_dict_keylist)
