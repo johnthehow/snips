@@ -20,14 +20,14 @@ from thehow.snips import dictx
 			5. 取值范围: 
 			6. 获得来源: 手动输入
 			7. 样例文件/输入: func = lambda *args:[i for i in args]
-		2. [参数2]
-			1. 数据类型: 
-			2. 数据结构: 
-			3. 参数类型: 
-			4. 语义: 
+		2. lists
+			1. 数据类型: list
+			2. 数据结构: [list,list]
+			3. 参数类型: 必选
+			4. 语义: 作为各层循环的keys
 			5. 取值范围: 
-			6. 获得来源: 
-			7. 样例文件/输入: 
+			6. 获得来源: 手动输入
+			7. 样例文件/输入: constants.nested_dict_keylist
 	[用例]
 		1. [用例1]
 			1. 语句: 
