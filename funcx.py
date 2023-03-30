@@ -66,9 +66,3 @@ def paraseq(func, fix_para_list, nest_para_lists): # 20230330150547
 		one_result = func(*fix_para_list,*seq_idx)
 		dict_seqidx_setter(result,seq_idx,one_result)
 	return result
-
-if __name__ == '__main__':
-	func = lambda f1,f2,v1,v2,v3,v4:(f1,f2,v1,v2,v3,v4)
-	fixpara = ['fix1','fix2']
-	res = paraseq(func, fixpara, nested_dict_keylist)
-	print(res)
