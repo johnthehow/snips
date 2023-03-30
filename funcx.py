@@ -44,7 +44,7 @@ from thehow.snips.dictx import dict_seqidx_setter
 				4. 样例文件/输出: 20230330152632.txt
 	[依赖]
 		1. thehow.snips.dictx.create_nested_dict
-		2. thehow.snips.dictx.dict_seqidx_setter
+		2. thehow.snips.dictx.dict_seqidx_setter # 20230316182821
 		3. itertools.product
 	[已知问题]
 		1. [问题1标题]
