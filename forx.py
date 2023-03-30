@@ -34,10 +34,10 @@ from thehow.snips import dictx
 				1. 语义: 对应各个keys的func的返回值
 				2. 数据类型: dict
 				3. 数据结构: {key:{key:val}}
-				4. 样例文件/输出: 
+				4. 样例文件/输出: 20230330135152.txt
 	[依赖]
-		1. 
-		2. 
+		1. thehow.snips.dictx
+		2. itertools.product
 	[已知问题]
 		1. [问题1标题]
 			1. 问题描述
