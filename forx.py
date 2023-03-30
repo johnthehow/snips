@@ -4,27 +4,24 @@ from thehow.snips import constants
 from thehow.snips import dictx
 
 def func(*args):
-	res = []
-	for i in args:
-		res.append(i)
-	return res
+	return [i for i in args]
 
 '''
 [函数注释]
 	[功能]
-		1. 主要功能: 
+		1. 主要功能: 模拟多层嵌套的for循环, 尤其是循环层数事先不能确定时
 		2. 额外功能
 	[设计图]
 		1. 索引码: 
 		2. 文件类型: 
 	[参数]
-		1. [参数1]
-			1. 数据类型: 
-			2. 数据结构: 
-			3. 参数类型: 
-			4. 语义: 
+		1. func
+			1. 数据类型: function
+			2. 数据结构: function
+			3. 参数类型: 必选
+			4. 语义: 放在循环最内层被运行的函数
 			5. 取值范围: 
-			6. 获得来源: 
+			6. 获得来源: 手动输入
 			7. 样例文件/输入: 
 		2. [参数2]
 			1. 数据类型: 
