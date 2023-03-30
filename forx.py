@@ -3,8 +3,9 @@ from itertools import product
 from thehow.snips import constants
 from thehow.snips import dictx
 def func(*args):
+	res = []
 	for i in args:
-		print(i)
+		res.append(i)
 
 def nested_for(func,lists): # 20230330125323
 	result = dictx.create_nested_dict(lists, len(lists)-1)
@@ -15,4 +16,4 @@ def nested_for(func,lists): # 20230330125323
 
 
 if __name__ == '__main__':
-	nested_for(func, constants.nested_dict_keylist)
+	res = nested_for(func, constants.nested_dict_keylist)
