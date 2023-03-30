@@ -20,13 +20,14 @@ from thehow.snips.dictx import dict_seqidx_setter
 			6. 获得来源: 手动输入
 			7. 样例文件/输入: func = lambda f1,f2,v1,v2,v3,v4:(f1,f2,v1,v2,v3,v4)
 		2. fix_para_list
-			1. 数据类型: iterable
-			2. 数据结构: iterable
+			1. 数据类型: list
+			2. 数据结构: [val,val]
 			3. 参数类型: 必选参数
 			4. 语义: 在函数中值固定不变的参数
 			5. 取值范围: 
 			6. 获得来源: 手动输入
 			7. 样例文件/输入: fixpara = ['fix1','fix2']
+			8. 注意事项: fix_para_list中的每一项, 不能是"不耐用"的生成器, 否则只有第一组参数会有结果
 		3. nest_para_lists
 			1. 数据类型: list
 			2. 数据结构: [list,list]
