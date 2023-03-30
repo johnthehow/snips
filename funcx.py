@@ -45,6 +45,7 @@ from thehow.snips.dictx import dict_seqidx_setter
 	[依赖]
 		1. thehow.snips.constants.nested_dict_keylist
 		2. thehow.snips.dictx.dict_seqidx_setter
+		3. itertools.product
 	[已知问题]
 		1. [问题1标题]
 			1. 问题描述
