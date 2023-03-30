@@ -7,7 +7,7 @@ def func(*args):
 		print(i)
 
 def nested_loop(func,lists): # 20230330125323
-	result =
+	result = dictx.create_nested_dict(lists, len(lists)-1)
 	for idx_seq in product(*lists):
 		func(*idx_seq)
 
