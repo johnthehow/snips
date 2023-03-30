@@ -2,6 +2,7 @@ from itertools import product
 
 from thehow.snips import constants
 from thehow.snips import dictx
+
 def func(*args):
 	res = []
 	for i in args:
