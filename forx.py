@@ -50,7 +50,7 @@ from thehow.snips import dictx
 		1. 
 		2.
 	[备注]
-		1.
+		1. 目前, 函数的所有必选参数必须完全且仅能来自于lists
 		2. 
 '''
 def nested_for(func,lists): # 20230330125323
