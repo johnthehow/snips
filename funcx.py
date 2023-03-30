@@ -19,7 +19,7 @@ from thehow.snips.dictx import
 			4. 语义: 希望变成能用于多组参数的函数的本来只能用于一组参数的函数
 			5. 取值范围: 
 			6. 获得来源: 手动输入
-			7. 样例文件/输入: func = lambda f1,f2,v1,v2,v3,v4: print(f1,f2,v1,v2,v3,v4)
+			7. 样例文件/输入: func = lambda f1,f2,v1,v2,v3,v4:(f1,f2,v1,v2,v3,v4)
 		2. fix_para_list
 			1. 数据类型: iterable
 			2. 数据结构: iterable
