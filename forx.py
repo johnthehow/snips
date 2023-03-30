@@ -6,6 +6,7 @@ def func(*args):
 	res = []
 	for i in args:
 		res.append(i)
+	return res
 
 def nested_for(func,lists): # 20230330125323
 	result = dictx.create_nested_dict(lists, len(lists)-1)
