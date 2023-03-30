@@ -43,7 +43,7 @@ from thehow.snips.dictx import dict_seqidx_setter
 				3. 数据结构: {key:{key:val}}
 				4. 样例文件/输出: 20230330152632.txt
 	[依赖]
-		1. thehow.snips.dictx.create_nested_dict
+		1. thehow.snips.dictx.create_nested_dict # 20230315092535
 		2. thehow.snips.dictx.dict_seqidx_setter # 20230316182821
 		3. itertools.product
 	[已知问题]
