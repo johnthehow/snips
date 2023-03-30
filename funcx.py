@@ -51,11 +51,10 @@ from thehow.snips.constants import nested_dict_keylist
 		1.
 		2. 
 '''
-def paraseq(func,fix_para_list,nest_para_lists): # 20230330150547
+def paraseq(func, fix_para_list, nest_para_lists): # 20230330150547
 	for seq_idx in product(*nest_para_lists):
 		func(*fix_para_list,*seq_idx)
 
-func = lambda f,a,b,c,d:print(f,a,b,c,d)
 
 if __name__ == '__main__':
 	paraseq(func, 'a', nested_dict_keylist)
