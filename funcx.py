@@ -70,4 +70,4 @@ def paraseq(func, fix_para_list, nest_para_lists): # 20230330150547
 if __name__ == '__main__':
 	func = lambda f1,f2,v1,v2,v3,v4:(f1,f2,v1,v2,v3,v4)
 	fixpara = ['fix1','fix2']
-	paraseq(func, 'a', nested_dict_keylist)
+	paraseq(func, fixpara, nested_dict_keylist)
