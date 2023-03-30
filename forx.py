@@ -36,7 +36,7 @@ from thehow.snips import dictx
 				3. 数据结构: {key:{key:val}}
 				4. 样例文件/输出: 20230330135152.txt
 	[依赖]
-		1. thehow.snips.dictx
+		1. thehow.snips.dictx.create_nested_dict # 20230315092535
 		2. itertools.product
 	[已知问题]
 		1. [问题1标题]
