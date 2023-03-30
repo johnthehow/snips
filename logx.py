@@ -1,3 +1,4 @@
+import logging
 # 日志 >>> # 配置日志记录器, 输出到标准输出
 logger = logging.getLogger(__name__)
 stream_handler = logging.StreamHandler()
