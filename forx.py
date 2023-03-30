@@ -38,6 +38,7 @@ from thehow.snips import dictx
 	[依赖]
 		1. thehow.snips.dictx.create_nested_dict # 20230315092535
 		2. itertools.product
+		3. thehow.snips.dictx.dict_seqidx_setter # 20230316182821
 	[已知问题]
 		1. [问题1标题]
 			1. 问题描述
