@@ -20,7 +20,7 @@ from thehow.snips import dictx
 			7. 样例文件/输入: func = lambda *args:[i for i in args]
 		2. lists
 			1. 数据类型: list
-			2. 数据结构: [list,list]
+			2. 数据结构: [[val,val],[val,val]]
 			3. 参数类型: 必选
 			4. 语义: 作为各层循环的keys
 			5. 取值范围: 

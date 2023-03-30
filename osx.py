@@ -26,7 +26,7 @@ from pathlib import Path
 				3. 数据结构: [str,str]
 				4. 样例文件/输出: 
 	[依赖]
-		1. 
+		1. pathlib.Path
 		2. 
 	[已知问题]
 		1. [问题1标题]
