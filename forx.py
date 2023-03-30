@@ -27,7 +27,7 @@ from thehow.snips import dictx
 			4. 语义: 作为各层循环的keys
 			5. 取值范围: 
 			6. 获得来源: 手动输入
-			7. 样例文件/输入: constants.nested_dict_keylist
+			7. 样例文件/输入: constants.nested_dict_keylist # 20230330134755
 	[用例]
 		1. [用例1]
 			1. 语句: 
