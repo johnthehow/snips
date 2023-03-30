@@ -18,3 +18,4 @@ def nested_for(func,lists): # 20230330125323
 
 if __name__ == '__main__':
 	res = nested_for(func, constants.nested_dict_keylist)
+	print(res)
