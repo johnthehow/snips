@@ -1,11 +1,13 @@
 from itertools import product
-from thehow.snips import constants
 
+from thehow.snips import constants
+from thehow.snips import dictx
 def func(*args):
 	for i in args:
 		print(i)
 
 def nested_loop(func,lists): # 20230330125323
+	result =
 	for idx_seq in product(*lists):
 		func(*idx_seq)
 
