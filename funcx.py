@@ -39,10 +39,10 @@ from thehow.snips.dictx import dict_seqidx_setter
 	[用例]
 		1. paraseq(func, fixpara, nested_paras)
 			1. 输出
-				1. 语义: 
-				2. 数据类型: 
-				3. 数据结构: 
-				4. 样例文件/输出: 
+				1. 语义: 对应所有变化嵌套参数组合的结果字典
+				2. 数据类型: dict
+				3. 数据结构: {key:{key:val}}
+				4. 样例文件/输出: 20230330152632.txt
 	[依赖]
 		1. 
 		2. 
@@ -70,4 +70,5 @@ def paraseq(func, fix_para_list, nest_para_lists): # 20230330150547
 if __name__ == '__main__':
 	func = lambda f1,f2,v1,v2,v3,v4:(f1,f2,v1,v2,v3,v4)
 	fixpara = ['fix1','fix2']
-	paraseq(func, fixpara, nested_dict_keylist)
+	res = paraseq(func, fixpara, nested_dict_keylist)
+	print(res)
