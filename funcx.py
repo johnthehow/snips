@@ -61,7 +61,7 @@ from thehow.snips.dictx import dict_seqidx_setter
 		1.
 		2. 
 '''
-def paraseq(func, fix_para_list, nest_para_lists): # 20230330150547
+def paralize_nest(func, fix_para_list, nest_para_lists): # 20230330150547
 	result = create_nested_dict(nest_para_lists, len(nest_para_lists)-1)
 	for seq_idx in product(*nest_para_lists):
 		one_result = func(*fix_para_list,*seq_idx)
