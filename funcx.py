@@ -37,7 +37,7 @@ from thehow.snips.dictx import dict_seqidx_setter
 			6. 获得来源: 手动输入
 			7. 样例文件/输入: nested_paras = thehow.snips.constants.nested_dict_keylist
 	[用例]
-		1. paraseq(func, fixpara, nested_paras)
+		1. paralize_nest(func, fixpara, nested_paras)
 			1. 输出
 				1. 语义: 对应所有变化嵌套参数组合的结果字典
 				2. 数据类型: dict
