@@ -450,8 +450,8 @@ def merge_dicts(dicts): # 20230321190735
 		1. sort_dict_by_key(dic)
 			1. 输出
 				1. 语义: 排序后的字典
-				2. 数据类型: list
-				3. 数据结构: [(key,val),(key,val)]
+				2. 数据类型: dict
+				3. 数据结构: dict
 				4. 样例文件/输出: [('a', 4), ('b', 1), ('c', 2)]
 	[依赖]
 		1. 
