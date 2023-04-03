@@ -181,3 +181,6 @@ def locate_sublist(sublist,lst): # 20230320183807
         if lst[idx:idx+sublist_len]==sublist:
             results.append((idx,idx+sublist_len-1))
     return results
+
+
+def is_sublist(sublist,lst): # 20230403113339
