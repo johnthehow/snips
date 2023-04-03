@@ -496,7 +496,7 @@ def sort_dict_by_key(dic): # 20230403112258
 				1. 语义: 排序后的字典
 				2. 数据类型: list
 				3. 数据结构: [(key,val),(key,val)]
-				4. 样例文件/输出: [('a', 4), ('b', 1), ('c', 2)]
+				4. 样例文件/输出: [('b', 1), ('c', 2), ('a', 4)]
 	[依赖]
 		1. 
 		2. 
@@ -515,4 +515,4 @@ def sort_dict_by_key(dic): # 20230403112258
 		2. 
 '''
 def sort_dict_by_val(dic): # 20230403112733
-	return sorted(dic.items(), key = lambda kv: kv[1])
+	return {k: v for k, v in sorted(dic.items(), key = lambda kv: kv[1])}
