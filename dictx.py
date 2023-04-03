@@ -427,3 +427,7 @@ def merge_dicts(dicts): # 20230321190735
 			single_res += dict_seqidx_getter(d, i)
 		dict_seqidx_setter(empty_nested_dict, i, single_res)
 	return empty_nested_dict
+
+
+def sort_dict_by_key(dic): # 20230403112258
+	return sorted(dic.items(), key = lambda kv: kv[0])
