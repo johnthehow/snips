@@ -515,4 +515,4 @@ def sort_dict_by_key(dic): # 20230403112258
 		2. 
 '''
 def sort_dict_by_val(dic): # 20230403112733
-	return rted(dic.items(), key = lambda kv: kv[1])
+	return sorted(dic.items(), key = lambda kv: kv[1])
