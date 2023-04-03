@@ -471,7 +471,7 @@ def merge_dicts(dicts): # 20230321190735
 		2. 
 '''
 def sort_dict_by_key(dic): # 20230403112258
-	return sorted(dic.items(), key = lambda kv: kv[0])
+	return {k: v for k, v in sorted(dic.items(), key = lambda kv: kv[0])}
 
 '''
 [函数注释]
