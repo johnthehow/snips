@@ -214,7 +214,7 @@ def locate_sublist(sublist,lst): # 20230320183807
 				1. 语义: sub序列是否是base序列的子序列
 				2. 数据类型: bool
 				3. 数据结构: bool
-				4. 样例文件/输出: 
+				4. 样例文件/输出: True
 	[依赖]
 		1. 
 		2. 
