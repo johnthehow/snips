@@ -184,4 +184,4 @@ def locate_sublist(sublist,lst): # 20230320183807
 
 
 def is_sublist(sublist,lst): # 20230403113339
-	return any(子序列 == 父序列[i:len(子序列) + i] for i in range(len(父序列) - len(子序列) + 1))
+	return any(sublist == lst[i:len(sublist) + i] for i in range(len(lst) - len(sublist) + 1))
