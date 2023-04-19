@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+import inspect
 
 '''
 [函数注释]
@@ -44,3 +45,19 @@ from pathlib import Path
 '''
 def listdir_full(directory): # 20230330153344
 	return [Path(directory).joinpath(file) for file in os.listdir(directory)]
+
+def create_path(directory, clear=False): # 20230420040640
+	if os.path.exists(directory):
+		if len(os.listdir()) == 0:
+			print(f'[{inspect.stack()[0][3]}] dir to be created {directory} exists and empty')
+			pass
+		else:
+			if clear == True:
+				for i in os.scandir(directory):
+					os.remove(i.path)
+				print(f'[{inspect.stack()[0][3]}] dir to be created {directory} exists and not empty, all files removed')
+			else:
+				print(f'[{inspect.stack()[0][3]}] dir to be created {directory} exists and not empty, all files retained')
+	else:
+		print(f'[{inspect.stack()[0][3]}] dir to be created {directory} do not exist, created')
+		os.makedirs(directory)
