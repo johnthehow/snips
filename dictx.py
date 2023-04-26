@@ -470,7 +470,7 @@ def merge_dicts(dicts): # 20230321190735
 		1.
 		2. 
 '''
-def sort_dict_by_key(dic): # 20230403112258
+def sorted_dict_by_key(dic): # 20230403112258
 	return {k: v for k, v in sorted(dic.items(), key = lambda kv: kv[0])}
 
 '''
@@ -514,5 +514,5 @@ def sort_dict_by_key(dic): # 20230403112258
 		1.
 		2. 
 '''
-def sort_dict_by_val(dic): # 20230403112733
+def sorted_dict_by_val(dic): # 20230403112733
 	return {k: v for k, v in sorted(dic.items(), key = lambda kv: kv[1])}
