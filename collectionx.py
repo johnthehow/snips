@@ -65,8 +65,3 @@ def default_counter(lst, complete_keys, default_val):
 			res_dict[i] = default_val
 	res_dict = dict(sorted(res_dict.items(),key=lambda i:i[0]))
 	return res_dict
-
-lista = [1, 2, 3, 3, 3, 5, 6, 6, 7, 9]
-
-res = default_counter(lista, [i for i in range(1,11)], 0)
-print(res)
