@@ -8,7 +8,7 @@ from time import time
     [用例]
         1. [用例1]
             1. 语句
-                >>> from thehow.snips.timer import deco_timer
+                >>> from thehow.snips.timex import deco_timer
 
                 >>> @deco_timer
                     def func(args):
